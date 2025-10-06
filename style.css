@@ -1,0 +1,305 @@
+body {
+  margin: 0;
+  background: #ccc url('images/container.png') center; /* фон по бокам */
+  font-family: Arial, sans-serif;
+}
+
+p {
+    text-indent: 30px; /* отступ только для первой строки */
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #001 center/100% repeat-y url('images/hud.png'); /* сам сайт в центре */
+  
+  min-height: 100vh; /* тянется по высоте */
+  display: flex;
+  border: 2px solid darkblue; /* обводка темно-синего цвета */
+  flex-direction: column;
+}
+header {
+  background: #222 url('images/Cruiser.png') no-repeat center/cover; /* замените путь на свой */
+  color: #000;
+  padding: 10px 20px 110px 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  -webkit-text-stroke: 1px white;
+}
+header-sub {
+  color: #000;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  -webkit-text-stroke: 1px white;
+}
+nav {
+  background: #444 url('images/bar.png') no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 2px solid darkblue; /* обводка темно-синего цвета */
+  position: relative;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+nav a:hover {
+  background: #666;
+}
+
+.section-link {
+  background: #000;
+  color: #fff;
+  padding: 3px;
+  border-radius: 6px;
+  font-size: 16px;
+  border: 2px solid darkblue; /* обводка темно-синего цвета */
+  min-width: 120px;
+  z-index: 10;
+}
+
+/* Dropdown */
+.dropdown {
+  padding: 5px;
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #555;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  border: 2px solid darkblue; /* обводка темно-синего цвета */
+  min-width: 120px;
+  z-index: 10;
+}
+.dropdown:hover .dropdown-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 23px;
+}
+.dropdown-content a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  min-width: 150px;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+.dropdown-content a:hover {
+  background: pink; /* ячейка загорается розовым */
+  color: #000;
+  text-decoration: none;
+}
+
+main {
+  flex: 1;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Ползунок громкости */
+#volume-control {
+  position: fixed;
+  top: 50%;
+  right: 0px;
+  transform: rotate(-90deg);
+  width: 100px;
+  z-index: 100;
+}
+
+.unit-block {
+  background: linear-gradient(180deg, rgba(255,255,255,0.1), rgba(255,255,255,0.0));
+  border: 2px solid turquoise;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 20px 15px;
+  overflow: hidden; /* чтобы float не вылезал за рамки */
+}
+
+.unit-block img {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  float: left; /* вот это делает “обтекание” */
+  margin: 5px 15px 10px 5px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+.unit-text {
+  color: #fff;
+  line-height: 1.4;
+}
+
+
+/* STATS*/
+
+
+/* Основная панель */
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 6px;
+  border-top: 6px solid #000050;
+  border-radius: 6px 6px 0 0;
+}
+
+/* Каждый параметр */
+.stater {
+  flex: 1 1 50px;
+  min-width: 10px;
+  text-align: center;
+  background: #000050cc;
+  margin: 4px;
+  border-radius: 10px;
+  padding: 5px 0;
+}
+
+.stat {
+  flex: 1 1 50px;
+  min-width: 10px;
+  text-align: center;
+  background: #2c2c4ccc;
+  margin: 4px;
+  border-radius: 20px;
+  padding: 5px 0;
+}
+
+.stat .label {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.stat .value {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Блок инвулов */
+.stat .invul {
+  align-items: center;
+  background: #1f1f1f url('images/invul.png') ;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 3px 0;
+}
+
+
+/* Datasheets*/
+
+
+
+.datasheet {
+  border: 1px solid #333;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 800px;
+  margin: auto;
+}
+
+.section {
+  border-top: 1px solid #333;
+}
+
+.section-title {
+  background: #263238;
+  color: #b0bec5;
+  font-weight: bold;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.section-title span {
+  margin-right: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #111;
+}
+
+th, td {
+  border-bottom: 1px solid #333;
+  padding: 6px 10px;
+  text-align: center;
+}
+
+th:first-child, td:first-child {
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background: #222222;
+}
+
+.tag {
+  background: #455a64;
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-left: 3px;
+}
+
+.tag.special {
+  background: #9c27b0;
+}
+
+.wargear {
+  list-style-type: none;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+}
+
+.wargear ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.keywords {
+  background: #101010;
+  border-top: 1px solid #333;
+  padding: 10px 20px;
+  font-size: 0.85rem;
+}
+
+.keywords span {
+  color: #fff;
+  border-bottom: 1px dashed #888;
+  margin-right: 6px;
+}
+
+
+/* Gif*/
+
+
+#corner-gif {
+  position: fixed;
+  bottom: 10px;
+  right: 0px;
+  z-index: 100;
+}
+#corner-gif img {
+  width: 120px;  /* можно подогнать размер */
+  height: auto;
+  border-radius: 50px; /* если хочешь плавные углы */
+}

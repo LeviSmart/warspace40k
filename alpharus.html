@@ -4,10 +4,13 @@
 <head>
 
 <meta charset="utf-8" />
+
 <meta name="viewport" content="width=device-width,initial-scale=1" />
+
 <title>WarSpace 40k</title>
 <!-- Иконка сайта (замените путь к файлу favicon.ico на свой) -->
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
 
 <link rel="stylesheet" href="style.css">
 
@@ -21,7 +24,6 @@
 <audio id="bg-music" src="sounds/background.mp3" autoplay loop></audio>
 <input type="range" id="volume-control" min="0" max="0.5" step="0.01" value="0.2">
 
-
 <div id="corner-gif">
   Прайм<img src="images/loading.gif" alt="Decoration" />
   <br> Соединение с флотом
@@ -30,50 +32,50 @@
 
 <div class="container">
 <header>
-WarSpace 40k
+WarSpace 40k <br> *Alpha Legion*
 </header>
 <nav>
-<a href="#main" data-sound="sounds/glitch.mp3">Main</a>
+<a href="index.html" data-sound="sounds/glitch.mp3">Main</a>
 <a href="#rules" data-sound="sounds/glitch.mp3">Rules</a>
 <div class="dropdown">
   <a href="#factions" data-sound="sounds/glitch.mp3">Factions</a>
   <div class="dropdown-content">
     <div>
       <b style="color: red"> Imperium </b>
-      <a href="#Sororitas" data-sound="sounds/sb.mp3">Adepta Sororitas</a>
-      <a href="#Astartes" data-sound="sounds/sm.mp3">Adeptus Astartes</a>
-      <a href="#Astartes" data-sound="sounds/astartes.mp3">Adeptus Custodes</a> 
-      <a href="#Astartes" data-sound="sounds/titan-sound.mp3">Adeptus Titanicus</a>
-      <a href="#Astartes" data-sound="sounds/ig.mp3">Astra Militarum</a>
-      <a href="#Astartes" data-sound="sounds/grey-knights.mp3">Grey Knights</a>
-      <a href="#Astartes" data-sound="sounds/agent.mp3">Imperial Agents</a>
-      <a href="#Astartes" data-sound="sounds/dred.mp3">Imperial Knights</a>
+      <a href="sororitas.html" data-sound="sounds/sb.mp3">Adepta Sororitas</a>
+      <a href="astartes.html" data-sound="sounds/sm.mp3">Adeptus Astartes</a>
+      <a href="custodes.html" data-sound="sounds/astartes.mp3">Adeptus Custodes</a> 
+      <a href="titan.html" data-sound="sounds/titan-sound.mp3">Adeptus Titanicus</a>
+      <a href="ig.html" data-sound="sounds/ig.mp3">Astra Militarum</a>
+      <a href="grey-knights.html" data-sound="sounds/grey-knights.mp3">Grey Knights</a>
+      <a href="agents.html" data-sound="sounds/agent.mp3">Imperial Agents</a>
+      <a href="imperial-knights.html" data-sound="sounds/dred.mp3">Imperial Knights</a>
       <b style="color: blueviolet"> Chaos </b>
-      <a href="#Astartes" data-sound="sounds/deamon.mp3">Chaos Daemons</a>
-	  <a href="#Astartes" data-sound="sounds/mymight.mp3">Chaos Knights</a>
-	  <a href="#Astartes" data-sound="sounds/csm.mp3">Chaos Space Marines</a>
-	  <a href="#Astartes" data-sound="sounds/deathguard.mp3">Death Guard</a>
-	  <a href="#Astartes" data-sound="sounds/cult.mp3">Emperor’s Children</a>
-	  <a href="#Astartes" data-sound="sounds/voices.mp3">Thousand Sons</a>
-	  <a href="#Astartes" data-sound="sounds/chorn.mp3">World Eaters</a>
+      <a href="chaos-daemons.html" data-sound="sounds/deamon.mp3">Chaos Daemons</a>
+	  <a href="chaos-knights.html" data-sound="sounds/mymight.mp3">Chaos Knights</a>
+	  <a href="csm.html" data-sound="sounds/csm.mp3">Chaos Space Marines</a>
+	  <a href="deathguard.html" data-sound="sounds/deathguard.mp3">Death Guard</a>
+	  <a href="children.html" data-sound="sounds/cult.mp3">Emperor’s Children</a>
+	  <a href="sons.html" data-sound="sounds/voices.mp3">Thousand Sons</a>
+	  <a href="chorn.html" data-sound="sounds/chorn.mp3">World Eaters</a>
     </div>
 	
     <div>
       <b style="color: greenyellow"> Xenos </b>
-      <a href="#Astartes"  data-sound="sounds/eldar.mp3">Aeldari</a>
-	  <a href="#Astartes" data-sound="sounds/dark.mp3">Drukhari</a>
-	  <a href="#Astartes" data-sound="sounds/tyran.mp3">Genestealer Cults</a>
-	  <a href="#Astartes" data-sound="sounds/kins.mp3">Leagues of Votann</a>
-	  <a href="#Astartes" data-sound="sounds/necr.mp3">Necrons</a>
-	  <a href="#Astartes" data-sound="sounds/waaagh.mp3">Orks</a>
-	  <a href="#Astartes" data-sound="sounds/tau.mp3">T’au Empire</a>
-	  <a href="#Astartes" data-sound="sounds/tyran.mp3">Tyranids</a>
+      <a href="eldar.html"  data-sound="sounds/eldar.mp3">Aeldari</a>
+	  <a href="dark.html" data-sound="sounds/dark.mp3">Drukhari</a>
+	  <a href="tyran.html" data-sound="sounds/tyran.mp3">Genestealer Cults</a>
+	  <a href="kins.html" data-sound="sounds/kins.mp3">Leagues of Votann</a>
+	  <a href="necr.html" data-sound="sounds/necr.mp3">Necrons</a>
+	  <a href="waaagh.html" data-sound="sounds/waaagh.mp3">Orks</a>
+	  <a href="tau.html" data-sound="sounds/tau.mp3">T’au Empire</a>
+	  <a href="tyran.html" data-sound="sounds/tyran.mp3">Tyranids</a>
 	  
       <b style="color: brown"> Unaligned </b>
-      <a href="#f2-2" data-sound="sounds/bandits.mp3">Unaligned Forces</a>
+      <a href="bandits.html" data-sound="sounds/bandits.mp3">Unaligned Forces</a>
       <b style="color: darkblue"> third-party </b>
 	  <a href="alpharus.html" data-sound="sounds/alpharus.mp3">Alpha Legion</a>
-      <a href="#f2-3" data-sound="sounds/combine.mp3">Combine(HL2)</a>
+      <a href="combine.html" data-sound="sounds/combine.mp3">Combine(HL2)</a>
     </div>
   </div>
 </div>
@@ -82,12 +84,34 @@ WarSpace 40k
 <!-- Здесь можно размещать текст и блоки -->
 <div style="padding: 0px 43px;">
 
-<a href="#section1" class="section-link" data-sound="sounds/glitch.mp3">Приветствие</a>
-<a href="#section2" class="section-link" data-sound="sounds/glitch.mp3">О целях</a>
-
+<br>
+<a href="#section1" class="section-link" data-sound="sounds/glitch.mp3">Faction-Rule</a>
+<hr>
+<a href="#section2" class="section-link" data-sound="sounds/glitch.mp3">Space-Units</a> 
 
 <hr>
-<p id="section1" style="text-align: center">⚔️ WarSpace 40 000.</p>
+<a href="#section3" class="section-link" data-sound="sounds/glitch.mp3">Battle-Units</a>
+	<br>
+	<p><b>Characters: </b>
+	<a href="#section3-alpharius" class="section-link" data-sound="sounds/glitch.mp3">Alpharius</a> 
+	</p>
+	<p><b>Battleline: </b>
+	<a href="#section3-alpharius" class="section-link" data-sound="sounds/glitch.mp3">Alpharius</a> 
+	</p>
+	<p><b>Dedicated Transports: </b>
+	<a href="#section3-alpharius" class="section-link" data-sound="sounds/glitch.mp3">Alpharius</a> 
+	</p>
+	<p><b>Other: </b>
+	<a href="#section3-alpharius" class="section-link" data-sound="sounds/glitch.mp3">Alpharius</a> 
+	</p>
+	<p><b>Other Vehicle: </b>
+	<a href="#section3-alpharius" class="section-link" data-sound="sounds/glitch.mp3">Alpharius</a> 
+	</p>
+
+<hr>
+
+
+<p id="section1" style="text-align: center">Faction Rules</p>
 <p style="margin-left: 25px;">Представь себе бездну космоса, где тьма бесконечна и холод безжалостен. Там, среди звёзд и мёртвых миров, решается судьба целого сектора Империума. В его сердце зияет варп-разлом —
  рваная рана в реальности, откуда струится безумие, где воплощаются кошмары и нет спасения от шепотов богов Хаоса. Этот разлом раскалывает звёздные карты и разделяет системы, словно нож, вонзённый в плоть самой 
  галактики.
@@ -119,7 +143,11 @@ WarSpace 40k
  но и его дух, — станет истинным владыкой сектора.</p>
  
 <hr>
-<p id="section2" style="text-align: center">🚀Вперед к Звездам!</p>
+<p id="section2" style="text-align: center">Space Units</p>
+
+
+
+
 
 <p>Мы решились создать эту настольную игру потому, что нам всегда не хватало ощущения полного масштаба войны во вселенной Warhammer 40,000. Отдельно существующие игры давали лишь часть картины:
  Battlefleet Gothic показывал величие и ужасающую мощь космических флотов, где миры падали или спасались в огне орбитальных сражений, а стандартная настольная Warhammer 40k переносила нас в грохот
@@ -133,6 +161,160 @@ WarSpace 40k
 
 <p>Наша игра — это попытка воплотить тот самый масштаб крестовых походов, о которых читаешь в хрониках Империума. Когда армия и флот — единый организм, когда каждая победа требует жертв, а каждая ошибка
  стоит целого мира.</p>
+ 
+<hr>
+ <p id="section3" style="text-align: center">Battle-Units</p> Characters:
+ 
+ <div class="unit-block" id="section3-alpharius">
+  <img src="images/alpha-legion/alpharius.png" alt="Omegon">
+  <div class="unit-text">
+  
+    <b>Alpharius, Primarch of the Alpha Legion</b><br>
+    Альфарий — легендарный Примарх XX Легиона, отличительные способности Альфария это хитрость и способность к полному изменению своей личности и размеров.
+	Никто наверняка не может знать где и когда появится Альфарий и даже если узнают, а действительно ли это он?  Может быть это <i>"Альфарий"</i>?
+	<br><br>
+	Альфарий был первым Примархом обнаруженным после того как их всех разбросало по нашей галактике, к счастью для <i>"Него"</i>, Альфарий приземлился на Терре, к капсуле на которой
+	он приземлился прибыли мародёры желая поживится возможной добычей, однако они не знали куда лезли и <i>"Он"</i> прибыл за своим сыном, убив мародёров, с тех пор само существование
+	Альфария было тайной для всех кроме Императора, Малькадора, а позже и Константина Вальдора, пока Альфарий позже не был вынужден себя ему раскрыть.  Альфарий участвовал
+	в первой битве Космодесанта будучи одним из 10000, наблюдая за тем как сражаются сыновья его брата <b>Льва Эль Джонсона</b>. Предпринял попытку <i>"убийства" "Его"</i> и успешно бы
+	её совершил если не вмешательство Константина, хотя и того он скорее всего одолел бы в бою, после чего смог бы успешно <i>"устранить" "Его"</i>. Спустя некоторое время во время
+	операции по устранению сопротивления на планете "Вольда Бета", Альфарий выяснил ещё об одном брате, и направился на планету Бар'Савор где чуть не потерял  весь элитный отряд
+	что направился с ним, но всё же нашёл брата им оказался его близнец Омегон, что появился из-за Варпа имея "одну душу на два тела" они сражались для побега как единое целое,
+	но всё же сбежали и позже Омегон "открылся" Хорусу Люперкалю, примарху 14 Легиона <i>"Лунных Волков"</i> как <i>"Альфарий"</i>... это была ложь.
+	<hr> 
+	
+	<div class="stater"> Характеристики <p  style="text-align: left;">Alpharius, Primarch of the Alpha Legion (⌀40mm)</p> </div>
+	
+<div class="stats-container">
+	
+  <div class="stat">
+    <div class="label">M</div>
+    <div class="value">9"</div>
+  </div>
+  <div class="stat">
+    <div class="label">T</div>
+    <div class="value">8</div>
+  </div>
+  <div class="stat">
+    <div class="label">Sv</div>
+    <div class="value">2+<hr></div>
+	<div class="invul">(4+)</div>
+  </div>
+  <div class="stat">
+    <div class="label">W</div>
+    <div class="value">8</div>
+  </div>
+  <div class="stat">
+    <div class="label">Ld</div>
+    <div class="value">5+</div>
+  </div>
+  <div class="stat">
+    <div class="label">OC</div>
+    <div class="value">3</div>
+  </div>
+  
+</div>
+
+
+
+
+<div class="datasheet">
+  <div class="section">
+    <div class="section-title"><span>🔫</span> RANGED WEAPONS</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Weapon</th>
+          <th>Range</th>
+          <th>A</th>
+          <th>BS</th>
+          <th>S</th>
+          <th>AP</th>
+          <th>D</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The Hydra's Spite – standard <span class="tag">PISTOL</span><span class="tag">ANTI-INFANTRY 3+</span><span class="tag">ANTI-CHARACTER 3+</span><span class="tag">PRECISION</span> </td>
+          <td>18"</td><td>2</td><td>2+</td><td>8</td><td>-2</td><td>2</td>
+        </tr>
+        <tr>
+          <td>The Hydra's Spite – supercharge <span class="tag">PISTOL</span><span class="tag">ANTI-INFANTRY 3+</span><span class="tag">ANTI-CHARACTER 3+</span><span class="tag special">HAZARDOUS</span><span class="tag special">BLAST</span></td>
+          <td>18"</td><td>2</td><td>2+</td><td>11</td><td>-3</td><td>2d3</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span>⚔️</span> MELEE WEAPONS</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Weapon</th>
+          <th>Range</th>
+          <th>A</th>
+          <th>WS</th>
+          <th>S</th>
+          <th>AP</th>
+          <th>D</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The Pale Spear - stab<span class="tag">ANTI-INFANTRY 3+</span><span class="tag">ANTI-CHARACTER 2+</span><span class="tag">ANTI-VEHICLE 4+</span><span class="tag">ANTI-MONSTER 4+</span><span class="tag">PRECISION</span><span class="tag special">DEVASTATING WOUNDS</span></td>
+          <td>Melee</td><td>3</td><td>2+</td><td>9</td><td>-4</td><td>4</td>
+        </tr>
+        <tr>
+          <td>The Pale Spear - swing<span class="tag special">LETHAL HITS</span></td>
+          <td>Melee</td><td>15</td><td>2+</td><td>6</td><td>-2</td><td>2</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">WARGEAR OPTIONS</div>
+    <ul class="wargear">
+      <li>This model’s The Pale Spear can be replaced with one of the following:
+        <ul>
+          <li>None</li>
+        </ul>
+      </li>
+      <li>This model’s The Hydra's Spite can be replaced with 1 nothing.</li>
+    </ul>
+  </div>
+
+  <div class="keywords">
+    <b>KEYWORDS:</b> <span>MONSTER</span>, <span>CHARACTER</span>, <span>EPIC HERO</span>, <span>PRIMARCH</span>, <span>CHAOS</span>
+  </div>
+</div>
+
+
+<div class="section">
+  <div class="section-title">ABILITIES</div>
+  <ul class="wargear">
+    <li><b>Daemonic Resilience:</b> Each time an attack is allocated to this model, subtract 1 from the Damage characteristic of that attack (to a minimum of 1).</li>
+    <li><b>Lord of Chaos:</b> While a friendly <span>CHAOS</span> unit is within 6", that unit can re-roll Hit rolls of 1.</li>
+  </ul>
+</div>
+
+<div class="section">
+  <div class="section-title">UNIT COMPOSITION</div>
+  <ul class="wargear">
+    <li>1 model – <b style="-webkit-text-stroke:1px red;-webkit-text-fill-color:white;">315pts</b></li>
+    <li><b>Base size:</b> 40mm</li>
+    <li>This model is equipped with: 1 The Pale Spear, 1 The Hydra's Spite</li>
+  </ul>
+</div>
+
+
+
+
+	
+  </div>
+</div>
+
 
 </div>
 </main>
