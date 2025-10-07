@@ -121,6 +121,24 @@ main {
   z-index: 100;
 }
 
+.faction-block {
+  background: linear-gradient(180deg, rgba(255,255,255,0.5), rgba(200,255,255,0.1));
+  border: 2px solid turquoise;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 20px 15px;
+  overflow: hidden; /* чтобы float не вылезал за рамки */
+}
+.faction-block img {
+  width: 98%;
+  height: 300px;
+  object-fit: cover;
+  float: left; /* вот это делает “обтекание” */
+  margin: 5px 15px 10px 5px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
 .unit-block {
   background: linear-gradient(180deg, rgba(255,255,255,0.1), rgba(255,255,255,0.0));
   border: 2px solid turquoise;
@@ -303,3 +321,34 @@ tbody tr:nth-child(even) {
   height: auto;
   border-radius: 50px; /* если хочешь плавные углы */
 }
+
+/*WEAPON TAGS*/
+ .wt-tag{
+    display:inline-block;
+    background:#455a64;
+    color:#fff;
+    font-size:0.7rem;
+    padding:1px 4px;
+    border-radius:4px;
+    margin:0 1px;
+    cursor:help;
+    position:relative;
+  }
+  .wt-tooltip{
+    display:none;
+    position:absolute;
+    top:120%;
+    left:50%;
+    transform:translateX(-12%);
+    width:400px;
+    background:#1a1a1a;
+    color:#ddd;
+    border:1px solid #077;
+    padding:8px;
+    border-radius:6px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.6);
+    z-index:2000;
+    font-size:0.85rem;
+    white-space:normal;
+  }
+  .wt-tag:hover .wt-tooltip{display:block;}
