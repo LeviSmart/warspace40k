@@ -93,3 +93,39 @@ currentHoverAudio = null;
 });
 
 
+let f_rule_text = '';
+document.querySelectorAll('div').forEach(item => {
+	
+	const ATT= (item.getAttribute('f_rule') || '').trim().toLowerCase();
+	
+	
+	if (ATT == 'text') {
+		
+		f_rule_text = item.innerHTML;
+		
+	} 
+
+	if (ATT == 'show') {
+		
+		item.innerHTML = `<span  style="font-size: revert; background: revert; border-radius: revert; border-bottom: 1px dashed #559; " class="wt-tag">
+			${item.innerText}
+			<span style="transform:translateX(-28%);" class="wt-tooltip">
+			${f_rule_text || '<i>No description available</i>'}
+			</span>
+		</span>`;
+		
+	} 
+	
+	//console.log('THE END');
+
+});
+
+// display:inline-block;
+// background:#455a64;
+//  color:#fff;
+//  font-size:0.7rem;
+//  padding:1px 4px;
+//  border-radius:4px;
+//  margin:0 1px;
+//  cursor:help;
+//  position:relative;
