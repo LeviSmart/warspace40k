@@ -114,7 +114,7 @@ class WTTag extends HTMLElement {
 	
 		this.innerHTML = `<span class="wt-tag">
 			${label + ' ' + this.innerText}
-			<span class="wt-tooltip">
+			<span data-sound="sounds/eldar.mp3" class="wt-tooltip">
 			${desc || '<i>No description available</i>'}
 			</span>
 		</span>`;

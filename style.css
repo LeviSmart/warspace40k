@@ -5,11 +5,11 @@ body {
 }
 
 p {
-    text-indent: 30px; /* отступ только для первой строки */
+    text-indent: 5%; /* отступ только для первой строки */
 }
 
 .container {
-  max-width: 900px;
+  max-width: 950px;
   margin: 0 auto;
   background: #001 center/100% repeat-y url('images/hud.png'); /* сам сайт в центре */
   
@@ -108,7 +108,7 @@ nav a:hover {
 main {
   flex: 1;
   color: #fff;
-  padding: 20px;
+  padding: 2% 6.5%;
 }
 
 /* Ползунок громкости */
@@ -125,8 +125,8 @@ main {
   background: linear-gradient(180deg, rgba(255,255,255,0.5), rgba(200,255,255,0.1));
   border: 2px solid turquoise;
   border-radius: 8px;
-  padding: 10px;
-  margin: 20px 15px;
+  padding: 2%;
+  margin: 20px 1%;
   overflow: hidden; /* чтобы float не вылезал за рамки */
 }
 .faction-block img {
@@ -143,8 +143,8 @@ main {
   background: linear-gradient(180deg, rgba(255,255,255,0.1), rgba(255,255,255,0.0));
   border: 2px solid turquoise;
   border-radius: 8px;
-  padding: 10px;
-  margin: 20px 15px;
+  padding: 1%;
+  margin: 20px 1%;
   overflow: hidden; /* чтобы float не вылезал за рамки */
 }
 
@@ -226,7 +226,7 @@ main {
   border: 1px solid #333;
   border-radius: 6px;
   overflow: hidden;
-  max-width: 800px;
+  max-width: 99%;
   margin: auto;
 }
 
@@ -256,7 +256,8 @@ table {
 
 th, td {
   border-bottom: 1px solid #333;
-  padding: 6px 10px;
+  padding: 6px 1%;
+  max-width: 250px;
   text-align: center;
 }
 
@@ -348,7 +349,7 @@ tbody tr:nth-child(even) {
     border-radius:6px;
     box-shadow:0 6px 18px rgba(0,0,0,0.6);
     z-index:2000;
-    font-size:0.85rem;
+    font-size:0.80rem;
     white-space:normal;
   }
   .wt-tag:hover .wt-tooltip{display:block;}
