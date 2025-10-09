@@ -129,3 +129,26 @@ document.querySelectorAll('div').forEach(item => {
 //  margin:0 1px;
 //  cursor:help;
 //  position:relative;
+
+
+// 1. Находим блок (предполагается, что у него есть id="myBlock")
+const blockToHide = document.getElementById('corner-gif');
+
+// 2. Задаем пороговую ширину
+const thresholdWidth = 1200; // Например, 768px
+
+// 3. Обработчик события изменения размера окна
+window.addEventListener('resize', function() {
+  // Получаем текущую ширину окна
+  const windowWidth = window.innerWidth;
+
+  // 4. Проверяем условие и скрываем/показываем блок
+  if (windowWidth < thresholdWidth) {
+    blockToHide.style.display = 'none'; // Скрываем блок
+  } else {
+    blockToHide.style.display = 'block'; // Показываем блок (замените на ваш исходный display)
+  }
+});
+
+// Запускаем проверку при загрузке страницы, чтобы блок сразу был скрыт при необходимости
+window.dispatchEvent(new Event('resize'));
