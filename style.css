@@ -115,7 +115,7 @@ main {
 #volume-control {
   position: fixed;
   top: 50%;
-  right: 0px;
+  right: -2%;
   transform: rotate(-90deg);
   width: 100px;
   z-index: 100;
@@ -172,8 +172,8 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 6px;
-  border-top: 6px solid #000050;
+  padding: 0px 6px;
+  border-top: 0px solid #000050;
   border-radius: 6px 6px 0 0;
 }
 
@@ -353,3 +353,15 @@ tbody tr:nth-child(even) {
     white-space:normal;
   }
   .wt-tag:hover .wt-tooltip{display:block;}
+  
+  /* Wahape-like*/
+  
+.kwb2 {line-height:0.95; color: #0ac; font-family: ConduitITC, arial; font-size:1em; font-style:normal; font-weight:bold; text-transform:uppercase; display:inline-block}
+
+.blueExample {border-left:3px solid #13a399; padding-left:12px; background:#99ffff09; font-style:italic}
+
+.tt {line-height: 0.95;}
+
+.BreakInsideAvoid { border-radius:3px; border-top:2px solid #13aaaa; border-left:1px solid #13aaaa; border-bottom:2px solid #13aaaa; background:#99ffff19; }
+
+.kwbu {cursor:pointer; border-bottom:1px dashed}

@@ -54,8 +54,7 @@ currentHoverAudio = null;
 });
 });
 
-
-
+function resound_wt_tag() { 
 
 document.querySelectorAll('wt-tag').forEach(item => {
 	
@@ -91,6 +90,12 @@ currentHoverAudio = null;
 
 
 });
+
+
+ };
+
+resound_wt_tag();
+
 
 
 let f_rule_text = '';

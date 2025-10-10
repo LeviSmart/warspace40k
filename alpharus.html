@@ -102,7 +102,7 @@ WarSpace 40k <br> *Alpha Legion*
 	<a href="#section3-alpharius" class="section-link" data-sound="sounds/glitch.mp3">Alpharius</a> 
 	</p>
 	<p><b>Other: </b>
-	<a href="#section3-alpharius" class="section-link" data-sound="sounds/glitch.mp3">Alpharius</a> 
+	<a href="#section3-lernaean_terminator" class="section-link" data-sound="sounds/glitch.mp3">Lernaean Terminator</a>
 	</p>
 	<p><b>Other Vehicle: </b>
 	<a href="#section3-alpharius" class="section-link" data-sound="sounds/glitch.mp3">Alpharius</a> 
@@ -156,7 +156,7 @@ WarSpace 40k <br> *Alpha Legion*
 	<p>Any model of the Alpha-Legion is always considered to be 3" further away than it actually is. When measuring range to it from any enemy model for purpose of resolving
 	a <i>Shooting attack</i> and on 2" for <i>charge</i>. </p>
 	
-	<ul><li><b>Exception:</b> If the range of the shooting attack is less than 12", then it considered to 2" further away than it actually is.</li></ul>
+	<ul class="blueExample"><li><b>Exception:</b> If the range of the shooting attack is less than 12", then it considered to 2" further away than it actually is.</li></ul>
   </div>
 </div>
 
@@ -182,7 +182,7 @@ WarSpace 40k <br> *Alpha Legion*
 <hr>
  <p id="section3" style="text-align: center">Battle-Units</p> Characters:
  
- <div class="unit-block" id="section3-alpharius">
+<div class="unit-block" id="section3-alpharius"> <!--START OF unit-block-->
   <img src="images/alpha-legion/alpharius.png" alt="Omegon">
   <div class="unit-text">
   
@@ -236,65 +236,50 @@ WarSpace 40k <br> *Alpha Legion*
 
 
 <div class="datasheet">
-  <div class="section">
-    <div class="section-title"><span>🔫</span> RANGED WEAPONS</div>
-    <table>
-      <thead>
-        <tr>
-          <th>Weapon</th>
-          <th>Range</th>
-          <th>A</th>
-          <th>BS</th>
-          <th>S</th>
-          <th>AP</th>
-          <th>D</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>The Hydra's Spite – standard <Wt-tag name="pistol"></wt-taG><Wt-tag name="anti">-INFANTRY 3+</wt-tag><wt-tag name="anti">-CHARACTER 3+</wt-tag><wt-tag name="PRECISION"></wt-tag> </td>
-          <td>18"</td><td>2</td><td>2+</td><td>8</td><td>-2</td><td>2</td>
-        </tr>
-        <tr>
-          <td>The Hydra's Spite – supercharge <wt-tag name="pistol"></wt-tag><wt-tag name="anti">-INFANTRY 3+</wt-tag><wt-tag name="anti">-CHARACTER 3+</wt-tag><wt-tag name="HAZARDOUS"></wt-tag><wt-tag name="BLAST"></wt-tag></td>
-          <td>18"</td><td>2</td><td>2+</td><td>11</td><td>-3</td><td>2d3</td>
-        </tr>
-		<tr>
-          <td>Venom-spheres <wt-tag name="anti">-INFANTRY 2+</wt-tag><wt-tag name="DEVASTATING_WOUNDS"></wt-tag><wt-tag name="BLAST"></wt-tag><wt-tag name="THREE_SHOT"></wt-tag></td>
-          <td>12"</td><td>5</td><td>2+</td><td>3</td><td>-0</td><td>2</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+
+<weapon-table type="RANGED WEAPONS">
+  <weapon R='18"' A="2" BS="2+" S="8" AP="-2" D="2">
+  The Hydra's Spite – standard
+    <wt-tag name="pistol"></wt-tag>
+    <wt-tag name="anti">-INFANTRY 3+</wt-tag>
+    <wt-tag name="anti">-CHARACTER 3+</wt-tag>
+    <wt-tag name="precision"></wt-tag>
+  </weapon>
+
+  <weapon R='18"' A="2" BS="2+" S="11" AP="-3" D="2d3">
+  The Hydra's Spite – supercharge
+    <wt-tag name="pistol"></wt-tag>
+    <wt-tag name="anti">-INFANTRY 3+</wt-tag>
+    <wt-tag name="anti">-CHARACTER 3+</wt-tag>
+    <wt-tag name="hazardous"></wt-tag>
+    <wt-tag name="blast"></wt-tag>
+  </weapon>
   
+  <weapon R='12"' A="5" BS="2+" S="3" AP="-0" D="2">
+  Venom-spheres 
+	<wt-tag name="anti">-INFANTRY 2+</wt-tag>
+	<wt-tag name="DEVASTATING_WOUNDS"></wt-tag>
+	<wt-tag name="BLAST"></wt-tag>
+	<wt-tag name="THREE_SHOT"></wt-tag>
+  </weapon>
+</weapon-table>
 
+<weapon-table type="MELEE WEAPONS">
+  <weapon R='Melee' A="3" WS="2+" S="9" AP="-4" D="4">
+  The Pale Spear - stab 
+    <wt-tag name="anti">-INFANTRY 2+</wt-tag>
+	<wt-tag name="anti">-CHARACTER 2+</wt-tag>
+	<wt-tag name="anti">-VEHICLE 4+</wt-tag>
+	<wt-tag name="anti">-MONSTER 4+</wt-tag>
+	<wt-tag name="PRECISION"></wt-tag>
+	<wt-tag name="DEVASTATING_WOUNDS"></wt-tag>
+  </weapon>
 
-  <div class="section">
-    <div class="section-title"><span>⚔️</span> MELEE WEAPONS</div>
-    <table>
-      <thead>
-        <tr>
-          <th>Weapon</th>
-          <th>Range</th>
-          <th>A</th>
-          <th>WS</th>
-          <th>S</th>
-          <th>AP</th>
-          <th>D</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>The Pale Spear - stab<wt-tag name="anti">-INFANTRY 2+</wt-tag><wt-tag name="anti">-CHARACTER 2+</wt-tag><wt-tag name="anti">-VEHICLE 4+</wt-tag><wt-tag name="anti">-MONSTER 4+</wt-tag><wt-tag name="PRECISION"></wt-tag><wt-tag name="DEVASTATING_WOUNDS"></wt-tag></td>
-          <td>Melee</td><td>3</td><td>2+</td><td>9</td><td>-4</td><td>4</td>
-        </tr>
-        <tr>
-          <td>The Pale Spear - swing<wt-tag name="LETHAL_HITS"></wt-tag></td>
-          <td>Melee</td><td>15</td><td>2+</td><td>6</td><td>-2</td><td>2</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+  <weapon R='Melee' A="15" WS="2+" S="6" AP="-2" D="2">
+  The Pale Spear - swing 
+    <wt-tag name="LETHAL_HITS"></wt-tag>
+  </weapon>
+</weapon-table>
 
   <div class="section">
     <div class="section-title">WARGEAR OPTIONS</div>
@@ -353,7 +338,7 @@ WarSpace 40k <br> *Alpha Legion*
     
 	<ul>
 		
-		<li><a href="#section3-alpharius" class="section-link" data-sound="sounds/glitch.mp3">Alpharius</a> </li>
+		<li><a href="#section3-lernaean_terminator" class="section-link" data-sound="sounds/glitch.mp3">Lernaean Terminator</a> </li>
 		<li><a href="#section3-alpharius" class="section-link" data-sound="sounds/glitch.mp3">Alpharius</a> </li>
 		
 	</ul>
@@ -368,7 +353,219 @@ WarSpace 40k <br> *Alpha Legion*
  </div>
 
   </div>
+</div> <!--END OF unit-block-->
+
+Other:
+
+ <div class="unit-block" id="section3-lernaean_terminator"> <!--START OF unit-block-->
+  <img src="images/alpha-legion/lernaean_terminator.png" alt="Omegon">
+  <div class="unit-text">
+  
+    <b>Лернейские Терминаторы - Альфа Легиона</b><br>
+	<br>
+	<b>Лернейские Терминаторы</b> - Тяжелобронированная элита <i>Альфа-Легиона</i>, их основные задачи сопровождение их Примарха на самых опасных миссиях служа ему личной гвардией, 
+	а также телепортация к и уничтожение самых ценные вражеских активов, навождение страха в рядах врагов и обезглавливание вражеской армии.
+	<br>
+	<br>
+	Хотя Альфа-Легион располагает и использует весь спектр конфигураций подразделений Легионес Астартес, мало кто знает о лернейских терминаторских отрядах.
+	Это происходит не потому, что они стремятся скрыть своё существование, а скорее потому, что редко оставляют после себя свидетелей своих деяний. Лернейцы,
+	подобно зверю, давшему им имя и ставшему символом Легиона, – бесформенная легенда и объект окутанного ужасом страха. Они – сокрушительные челюсти многоголовой Гидры,
+	яростное нападение с неожиданной стороны. И, подобно мифическому зверю, их практически невозможно убить. Лернейцы облачены в тактическую броню дредноута «Катафракты»,
+	украшенную барочным тиснением, и вооружены волкитскими боевыми конями, что делает их грозными бойцами ближнего боя и передовыми отрядами, против которых мало кто может устоять.
+	В бою они неустанно наступают на врага, обрушиваясь с контролируемой яростью и убивая любого врага, не отступающего перед ними. Захватив цель, они упорно держат её,
+	отражая любые контратаки, подобно огромному зверю, крепко сжимающему челюсти на своей обречённой добыче.
+	<hr> 
+	
+	<div class="stater"> Характеристики <p  style="text-align: left;">Lernaean Terminators - Alpha Legion (⌀40mm)</p> </div>
+	
+<div class="stats-container">
+	
+  <div class="stat">
+    <div class="label">M</div>
+    <div class="value">6"</div>
+  </div>
+  <div class="stat">
+    <div class="label">T</div>
+    <div class="value">5</div>
+  </div>
+  <div class="stat">
+    <div class="label">Sv</div>
+    <div class="value">2+<hr></div>
+	<div class="invul">(4+)</div>
+  </div>
+  <div class="stat">
+    <div class="label">W</div>
+    <div class="value">3</div>
+  </div>
+  <div class="stat">
+    <div class="label">Ld</div>
+    <div class="value">5+</div>
+  </div>
+  <div class="stat">
+    <div class="label">OC</div>
+    <div class="value">1</div>
+  </div>
+  
 </div>
+
+
+
+
+<div class="datasheet">
+
+<weapon-table type="RANGED WEAPONS">
+  <weapon R='16"' A="2" BS="2+" S="5" AP="-1" D="2">
+  Volkite Charger
+    <wt-tag name="assault"></wt-tag>
+	<wt-tag name="anti">-INFANTRY 5+</wt-tag>
+	<wt-tag name="DEVASTATING_WOUNDS"></wt-tag>
+  </weapon>
+
+  <weapon R='12"' A="d6+1" BS="-" S="5" AP="-1" D="1">
+  Heavy Flamer
+    <wt-tag name="assault"></wt-tag>
+    <wt-tag name="ignores_cover"></wt-tag>
+    <wt-tag name="torrent"></wt-tag>
+  </weapon>
+  
+  <weapon R='42"' A="2" BS="3+" S="11" AP="-2" D="d3+1">
+  Conversion Beam Cannon
+	<wt-tag name="heavy"></wt-tag>
+	<wt-tag name="rapid_fire">2</wt-tag>
+	<wt-tag name="blast"></wt-tag>
+	<wt-tag name="blind">1</wt-tag>
+  </weapon>
+  
+  <weapon R='20"' A="2" BS="2+" S="8" AP="-4" D="d6+1">
+  ✜Plasma Blaster - standart
+	<wt-tag name="assault"></wt-tag>
+  </weapon>
+  
+  <weapon R='20"' A="3" BS="2+" S="8" AP="-4" D="d6+1">
+  ✜Plasma Blaster - supercharge
+	<wt-tag name="assault"></wt-tag>
+	<wt-tag name="hazardous"></wt-tag>
+  </weapon>
+  
+  <weapon R='48"' A="3" BS="3+" S="5" AP="-1" D="3">
+  Volkite Culverin
+	<wt-tag name="heavy"></wt-tag>
+	<wt-tag name="assault"></wt-tag>
+	<wt-tag name="anti">-INFANTRY 5+</wt-tag>
+	<wt-tag name="DEVASTATING_WOUNDS"></wt-tag>
+  </weapon>
+  
+  <weapon R='12"' A="5" BS="2+" S="3" AP="-0" D="2">
+  Venom-sphere
+	<wt-tag name="anti">-INFANTRY 2+</wt-tag>
+	<wt-tag name="DEVASTATING_WOUNDS"></wt-tag>
+	<wt-tag name="BLAST"></wt-tag>
+	<wt-tag name="ONE_SHOT"></wt-tag>
+  </weapon>
+</weapon-table>
+
+<weapon-table type="MELEE WEAPONS">
+  <weapon R='Melee' A="5" WS="2+" S="5" AP="-2" D="2">
+  Power axe
+  </weapon>
+
+  <weapon R='Melee' A="4" WS="2+" S="8" AP="-2" D="2">
+  Power fist 
+  </weapon>
+  
+  <weapon R='Melee' A="4" WS="3+" S="8" AP="-2" D="2">
+  Chainfist 
+    <wt-tag name="ANTI">-VEHICLE 3+</wt-tag>
+  </weapon>
+</weapon-table>
+
+  <div class="section">
+    <div class="section-title">WARGEAR OPTIONS</div>
+    <ul class="wargear">
+		<li>For every five models in the unit, one Lernaean may exchange his volkite charger for one of the following:</li>
+		<ul>
+		<li>Heavy flamer</li>
+		<li>Conversion beam cannon</li>
+		<li>Plasma blaster</li>
+		<li>Volkite culverin</li>
+		</ul>
+		<li>Any model in the unit may exchange their power axe for one of the following:</li>
+		<ul>
+		<li>Power fist</li>
+		<li>Chainfist</li>
+		</ul>
+		<li>Harrower in the unit may be equipped with:</li>
+		<ul>
+		<li>Venom-sphere</li>
+		</ul>
+    </ul>
+  </div>
+  
+  
+<div class="section">
+  <div class="section-title">ABILITIES</div>
+  <ul class="wargear">
+  CORE: <i><b>Deep Strike,</b></i>
+  <hr>
+  <div f_rule="show">FACTION: Lies and Obfuscation</div>
+  <hr>
+	<li><b>Infiltration in shadows</b>: While this model is leading a unit, models in this unit get [Lone Operative] ability.</li><br>
+
+	<li><b>I'am Alpharius, and i'am Omegon</b>: Once this model's wounds deplete, instead of taking it from board, roll D6, on 3+ return
+	this model in game with full wounds left in any other unit instead of one of models in said unit, this ability can
+	only be used once per battle, if this model is able to be attached to unit in which it replaces model it can be attached to it.</li><br>
+
+	<li><b>Head of the Hydra</b>: At the start of your Command phase, select one of two "Head of the Hydra" abilities. Until the start of your next
+	Command phase, this model has those abilities.</li>
+
+	<ul>
+		<li><b>Exemplar of Precision (Aura)</b>: Every model in 6" of this model gets +1 to ballistic skill.</li>
+
+		<li><b>Psychic mitigation (Aura)</b>: Every model in 3" of this model gets [Stealth] ability</li>
+	</ul>
+  </ul>
+</div>
+  
+  
+<div class="section">
+  <div class="section-title">UNIT COMPOSITION</div>
+  <ul class="wargear">
+	<ul>
+	<li>1 Harrower </li>
+	<li>4-9 Lernaeans</li>
+	</ul>
+	Every model is equipped with: Volkite Charger; Power axe.
+	<hr>
+	
+    <li>5 model – <b style="-webkit-text-stroke:1px red;-webkit-text-fill-color:white;">190pts</b></li>
+	<li>10 model – <b style="-webkit-text-stroke:1px red;-webkit-text-fill-color:white;">360pts</b></li>
+	
+  </ul>
+</div> 
+
+
+<div class="section">
+  <div class="section-title">LED BY</div>
+  <ul class="wargear">
+    <li>This unit can be led by the following units:</li>
+    
+	<ul>
+		
+		<li><a href="#section3-alpharius" class="section-link" data-sound="sounds/glitch.mp3">Alpharius</a> </li>
+		
+	</ul>
+	
+  </ul>
+</div>
+
+
+  <div class="keywords">
+    <b>KEYWORDS:</b> <span>MONSTER</span>, <span>CHARACTER</span>, <span>EPIC HERO</span>, <span>PRIMARCH</span>, <span>CHAOS</span>
+  </div>
+ </div>
+
+  </div>
+</div> <!--END OF unit-block-->
 
 
 
