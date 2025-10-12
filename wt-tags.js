@@ -91,6 +91,36 @@ const WT_DESCRIPTIONS = {
 	a Morale test - BLIND X. If it fails, it suffers -1 to BS until your next Shoot Phase, and it is considered Blinded.
 	</li></ul>
   `,
+  conversion: `
+    <b>CONVERSION</b><br>
+	<br>
+    The Conversion Beamer, also called a Conversion Beam Projector, is an incredibly rare and deadly antimatter-based pre-Horus Heresy archeotech weapon most likely
+	developed during the Age of Technology. It fires a directed energy beam of antimatter particles which cause a matter-antimatter explosion in its target. It is a powerful,
+	long-ranged weapon whose beam intensity actually becomes stronger the farther the range to its target, up to a terminal distance point where the beam finally begins to lose coherence.
+	<br>
+	<ul class="BreakInsideAvoid frameLight Corner14"><li>
+	Each time an attack made with this weapon <span class="kwb2">[CONVERSION X]</span> targets an enemy unit that is not within 12" range, an unmodified Hit roll of X+ scores a 
+	<span class="tooltip00013" data-tooltip-content="#tooltip_content00013"><span class="tt kwbu">Critical Hit</span></span>. 
+	<li>In default X is 4+</li>
+	</li></ul>
+  `,
+  precision_shot: `
+    <b>PRECISION_SHOT</b><br>
+	<br>
+    Many of the galaxy’s marksmen are able to single out enemy leaders or soldiers with particularly powerful weapons and snipe them with unerring accuracy.
+	<br>
+	<ul class="BreakInsideAvoid frameLight Corner14"><li>
+	On a 
+	<span class="tooltip00013" data-tooltip-content="#tooltip_content00013"><span class="tt kwbu">Critical Hit</span></span>. 
+	
+	Wounds from Precision Shots are allocated against a model (or models) of the attacking player’s choice in the target unit, as long as the target model
+	is in range and line of sight of the attacking model and only if the wounded models in the unit itself are already killed(or your target is Attached unit),
+	rather than following the normal
+	<span class="tooltip00013" data-tooltip-content="#tooltip_content00013"><span class="tt kwbu">rules for Wound allocation.</span></span>. 
+	</li></ul>
+  `,
+  
+  
 };
 
 /* ---------- Определение кастомного элемента ---------- */
@@ -121,7 +151,7 @@ if (this.innerText.includes(label)) {
       </span>`;
 	} else { /* ---------- our тегов ---------- */
 	
-		if (nameRaw == 'three_shot' || nameRaw == 'blind') { /* ---------- Special тегов ---------- */
+		if (nameRaw == 'three_shot' || nameRaw == 'blind' || nameRaw == 'precision_shot') { /* ---------- Special тегов ---------- */
 		this.innerHTML = `<span class="wt-tag" style="background:#039;">
 			${label + ' ' + this.innerText}
 			<span class="wt-tooltip" style="border:1px solid #039;">
@@ -164,9 +194,9 @@ customElements.define('wt-tag', WTTag);
 // weapon-tables.js
 class WeaponTable extends HTMLElement {
   connectedCallback() {
-    const type = this.getAttribute("type") || "WEAPONS"; console.log(type);
+    const type = this.getAttribute("type") || "WEAPONS"; 
     const weapons = Array.from(this.querySelectorAll("weapon"));
-
+	
     // создаём секцию
     const section = document.createElement("div");
     section.className = "section";
@@ -252,7 +282,8 @@ class WeaponTable extends HTMLElement {
     // создаём строки оружия
     weapons.forEach(weapon => {
       const tr = document.createElement("tr");
-
+		tr.setAttribute( 'style', weapon.getAttribute(`style`));
+		
       const nameCell = document.createElement("td");
       nameCell.innerHTML = `
         ${weapon.innerHTML.trim()}
