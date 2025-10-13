@@ -115,7 +115,7 @@ main {
 #volume-control {
   position: fixed;
   top: 50%;
-  right: -2%;
+  right: -2.9%;
   transform: rotate(-90deg);
   width: 100px;
   z-index: 100;
@@ -335,13 +335,19 @@ tbody tr:nth-child(even) {
     cursor:help;
     position:relative;
   }
+  
+  :root {
+  --tooltip-width: 400px;
+  --tooltip-font-size:0.80rem;
+}
+  
   .wt-tooltip{
     display:none;
     position:absolute;
     top:120%;
     left:50%;
     transform:translateX(-12%);
-    width:400px;
+    width: var(--tooltip-width);
     background:#1a1a1a;
     color:#ddd;
     border:1px solid #077;
@@ -349,7 +355,7 @@ tbody tr:nth-child(even) {
     border-radius:6px;
     box-shadow:0 6px 18px rgba(0,0,0,0.6);
     z-index:2000;
-    font-size:0.80rem;
+    font-size: var(--tooltip-font-size);
     white-space:normal;
   }
   .wt-tag:hover .wt-tooltip{display:block;}

@@ -157,3 +157,24 @@ window.addEventListener('resize', function() {
 
 // Запускаем проверку при загрузке страницы, чтобы блок сразу был скрыт при необходимости
 window.dispatchEvent(new Event('resize'));
+
+
+
+let updateTooltipw = document.documentElement.style.getPropertyValue('--tooltip-width');
+let updateTooltipt = document.documentElement.style.getPropertyValue('--tooltip-font-size');
+function updateTooltipWidth() {
+
+  if(window.innerWidth < 900){
+	document.documentElement.style.setProperty('--tooltip-width', "235px");
+	document.documentElement.style.setProperty('--tooltip-font-size', "0.67rem");
+  }
+  if(window.innerWidth >= 900){
+	document.documentElement.style.setProperty('--tooltip-width', updateTooltipw );
+	document.documentElement.style.setProperty('--tooltip-font-size', updateTooltipt);
+  }
+  
+}
+
+updateTooltipWidth();
+window.addEventListener('resize', updateTooltipWidth);
+
