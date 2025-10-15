@@ -119,6 +119,30 @@ const WT_DESCRIPTIONS = {
 	<span class="tooltip00013" data-tooltip-content="#tooltip_content00013"><span class="tt kwbu">rules for Wound allocation.</span></span>. 
 	</li></ul>
   `,
+  disintegration: `
+    <b>DISINTEGRATION</b><br>
+	<br>
+    A  Disintegrator is one of a class of powerful thermal ray weapons whose technology is pre-Imperial in origin and dates back to the Age of Technology.
+	These weapons possessed considerable killing power, surpassing most other man-portable armaments of their size.
+	decomposing an object into atoms, breaking down force fields.
+	<br>
+	<br>
+	<div class="blueExample"><b>Example:</b>
+	If u will atack model with 7 wounds(start wounds in datasheet). u will throw 3d3 |1-3|4-6|7-9| cuz this is 3 triple wounds in here and then 3d6.
+	and on 4+ every dice will give 1 additional DMG if model save that. model will have 3 mortal wounds for every triplet.
+	if not save full damage. and disable invul sv.
+	</div>
+	
+	<ul class="BreakInsideAvoid frameLight Corner14">
+
+	<li>for each beginning triple wounds in starting wounds in an enemy model, you gain 1d3 Disintegration Rolls. These are converted into damage, preventing invulnerability saves.</li>
+	<li>For 1-3 wounds, you gain 1 Disintegration Rolls. For 4-6, you gain 2 Disintegration Rolls... For 21+ wounds, you gain 7 Disintegration Rolls. - Maximum.</li>
+	<li>For each Disintegration Roll, you can roll a D6 on a 4+ to gain an additional +1 damage.</li>
+	<li>If the enemy saved this attack, they gain a number of mortal wounds equal to the amount of Disintegration Rolls.</li>
+	<li>If the enemy model's T is 5 or less, you automatically pass roll for the Wound.</li>
+	<li>If an enemy model fails a save but survives, it loses its invulnerability until your next shoot phase. Model named - with overloaded shield.</li>
+	</ul>
+  `,
   
   
 };
