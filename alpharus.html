@@ -103,6 +103,7 @@ WarSpace 40k <br> *Alpha Legion*
 	<a href="#section3-alpharius" class="section-link" data-sound="sounds/glitch.mp3">Alpharius</a> 
 	</p>
 	<p><b>Other: </b> 
+	<a href='#section3-destroyer' class="section-link" data-sound="sounds/glitch.mp3">Destroyer Assault Squad</a> ,
 	<a href="#section3-lernaean_terminator" class="section-link" data-sound="sounds/glitch.mp3">Lernaean Terminator</a>, 
 	<a href="#section3-head_hunters" class="section-link" data-sound="sounds/glitch.mp3">Headhunter Kill Team</a>
 	</p>
@@ -446,8 +447,8 @@ Characters:
 	<wt-tag name="Devastating_wounds"></wt-tag>
   </weapon>
   
-  <weapon R='48"' A="1" BS="2+" S="12" AP="-3" D="d6" style="background: #322;">
-  The Instrument — Krak Bolt
+  <weapon R='48"' A="1" BS="2+" S="10" AP="-3" D="d6" style="background: #322;">
+  The Instrument — Krak Round
 	<wt-tag name="Anti">-VEHICLE 5+</wt-tag>
 	<wt-tag name="Sustained_hits">1</wt-tag>
 	<wt-tag name="Devastating_wounds"></wt-tag>
@@ -562,6 +563,177 @@ Battleline:
 Dedicated Transports:
 
 Other:
+
+<div class="unit-block" id='section3-destroyer'> <!--START OF unit-block-->
+  <img src="images/alpha-legion/destroyers.png" alt="Omegon">
+  <div class="unit-text">
+  
+    <b>Штурмовые Уничтожители - Альфа Легиона</b><br>
+	<br>
+	Истоки отрядов разрушителей лежат в войнах за объединение Терры, но, как ни странно, не с войсками Императора, а с его врагами. Некоторые легионы,
+	которые почти не используют Разрушители или вообще избегают их, считают это позорным, но они оснащены запрещенным оружием и являются экспертами в его использовании.
+	Наряду с некоторыми фракциями Механикум, только кадровые разрушители имеют лицензию на использование таких запрещенных устройств. Радиоактивное оружие,
+	биоалхимические боеприпасы и ползучий горящий ужас фосфекс входят в их темный арсенал - оружие, которое безвозвратно портит почву, на которой оно используется.
+	Отмеченные почерневшей от огня и обожженной химией броней, разрушители космических десантов часто избегаются своими боевыми братьями во многих легионах и считаются
+	в лучшем случае неизбежным злом, хотя эффективность их реликтового оружия нельзя отрицать. Отряды истребителей Легиона часто выходят на поле боя, оснащенные прыжковыми ранцами "Вархок"
+	что позволяет им быстро передислоцироваться во время боя, чтобы максимально увеличить разрушительные возможности своего оружия.
+	<br>
+
+	<hr> 
+	
+<!-- START STATS --><div class="stater"> Характеристики <p  style="text-align: left;">Destroyer Assault Squad - Alpha Legion (⌀32mm)</p> 
+	
+<div class="stats-container">
+	
+  <div class="stat">
+    <div class="label">M</div>
+    <div class="value">12"</div>
+  </div>
+  <div class="stat">
+    <div class="label">T</div>
+    <div class="value">4</div>
+  </div>
+  <div class="stat">
+    <div class="label">Sv</div>
+    <div class="value">3+</div>
+  </div>
+  <div class="stat">
+    <div class="label">W</div>
+    <div class="value">2</div>
+  </div>
+  <div class="stat">
+    <div class="label">Ld</div>
+    <div class="value">6+</div>
+  </div>
+  <div class="stat">
+    <div class="label">OC</div>
+    <div class="value">1</div>
+  </div>
+  
+</div>
+<!-- END STATS --></div>
+
+<div class="datasheet">
+
+<weapon-table type="RANGED WEAPONS">
+  <weapon R='12"' A="1" BS="3+" S="4" AP="-1" D="1">
+  Bolt pistol
+	<wt-tag name="pistol"></wt-tag>
+    <wt-tag name="assault"></wt-tag>
+	<wt-tag name="sustained_hits">1</wt-tag>
+  </weapon>
+  
+  <weapon R='12"' A="1" BS="3+" S="4" AP="-1" D="1">
+  Two bolt pistols
+	<wt-tag name="pistol"></wt-tag>
+    <wt-tag name="assault"></wt-tag>
+	<wt-tag name="twin_linked"></wt-tag>
+	<wt-tag name="sustained_hits">1</wt-tag>
+  </weapon>
+  
+  <weapon R='12"' A="1" BS="3+" S="7" AP="-2" D="1" style="background: #223;">
+  Two plasma pistols — standart
+	<wt-tag name="pistol"></wt-tag>
+    <wt-tag name="assault"></wt-tag>
+	<wt-tag name="twin_linked"></wt-tag>
+  </weapon>
+  
+  <weapon R='12"' A="1" BS="3+" S="8" AP="-3" D="2" style="background: #223;">
+  Two plasma pistols — supercharge
+	<wt-tag name="pistol"></wt-tag>
+    <wt-tag name="assault"></wt-tag>
+	<wt-tag name="HAZARDOUS"></wt-tag>
+	<wt-tag name="twin_linked"></wt-tag>
+  </weapon>
+
+  <weapon R='18"' A="d6+3" BS="-" S="4" AP="-2" D="1">
+  Toxiferran flamer
+	<wt-tag name="IGNORES_COVER"></wt-tag>
+    <wt-tag name="TORRENT"></wt-tag>
+	<wt-tag name="assault"></wt-tag>
+	<wt-tag name="ANTI">-PSYKER 4+</wt-tag>
+	<wt-tag name="ANTI">-INFANTRY 5+</wt-tag>
+	<wt-tag name="DEVASTATING_WOUNDS"></wt-tag>
+  </weapon>
+  
+  <weapon R='12"' A="1" BS="2+" S="10" AP="-3" D="d6+2">
+  Melta bomb
+	<wt-tag name="ONE_SHOT"></wt-tag>
+  </weapon>
+</weapon-table>
+
+<weapon-table type="MELEE WEAPONS">
+  <weapon R='Melee' A="4" WS="3+" S="4" AP="-1" D="1">
+  Chainsword
+  </weapon>
+</weapon-table>
+
+  <div class="section">
+    <div class="section-title">WARGEAR OPTIONS</div>
+    <ul class="wargear">
+		
+		<li>For every five models in the unit, one Legion Destroyer may exchange one of his two bolt pistols for one of the following:</li>
+		<ul>
+		<li>Toxiferran flamer + Bolt pistol</li>
+		</ul>
+		<br>
+		<li>For every five models in the unit, one Legion Destroyer may exchange one of his two bolt pistols for one of the following:</li>
+		<ul>
+		<li>Two Plasma pistols</li>
+		</ul>
+		<br>
+		<li>For every five models in the unit, one Legion Destroyer may have 1 melta bomb</li>
+		
+    </ul>
+  </div>
+  
+  
+<div class="section">
+  <div class="section-title">ABILITIES</div>
+  <ul class="wargear">
+  CORE: <i><b>Deep Strike,</b></i>
+  <hr>
+  <div f_rule="show">FACTION: Lies and Obfuscation</div>
+  <hr>
+	<br>
+	<li><b>Death from the sky</b>:
+	Your unit damages enemy units by d3 mortal wound as it flies through them. (if enemy unit is not fly)</li>
+	<br>
+	<li><b>Finish off the retreatings</b>:
+	 if an enemy unit fails a morale test while it is demoralized, add +1 attack to Two Bolt Pistol against it</li>
+
+  </ul>
+</div>
+  
+  
+<div class="section">
+  <div class="section-title">UNIT COMPOSITION</div>
+  <ul class="wargear">
+	
+	<ul>
+	<li>1 Legion Destroyer Sergeant</li>
+	<li>4-9 Legion Destroyers</li>
+	</ul>
+	Every model in this unit equipped with: Chainsword; Two bolt pistols
+	<hr>
+	
+    <li>5 model – <b style="-webkit-text-stroke:1px red;-webkit-text-fill-color:white;">135pts</b></li>
+	<li>10 model – <b style="-webkit-text-stroke:1px red;-webkit-text-fill-color:white;">270pts</b></li>
+	
+	<hr>
+	
+  </ul>
+</div> 
+
+
+  <div class="keywords">
+    <b>KEYWORDS:</b> <span>GRENADE</span>, <span>INFANTRY</span>, <span>JUMP PACK</span>, <span>FLY</span>
+  </div>
+ </div>
+
+  </div>
+</div> <!--END OF unit-block-->
+
 
 <div class="unit-block" id="section3-lernaean_terminator"> <!--START OF unit-block-->
   <img src="images/alpha-legion/lernaean_terminator.png" alt="Omegon">
@@ -757,21 +929,6 @@ Other:
 	
   </ul>
 </div> 
-
-
-<div class="section">
-  <div class="section-title">LED BY</div>
-  <ul class="wargear">
-    <li>This unit can be led by the following units:</li>
-    
-	<ul>
-		
-		<li><a href="#section3-alpharius" class="section-link" data-sound="sounds/glitch.mp3">Alpharius</a> </li>
-		
-	</ul>
-	
-  </ul>
-</div>
 
 
   <div class="keywords"> 
@@ -981,13 +1138,7 @@ Other:
 <div class="section">
   <div class="section-title">LED BY</div>
   <ul class="wargear">
-    <li>This unit can be led by the following units:</li>
-    
-	<ul>
-		
-		<li><a href="#section3-alpharius" class="section-link" data-sound="sounds/glitch.mp3">Alpharius</a> </li>
-		
-	</ul>
+    <li>This unit can be led by the units as matternal unit</li>
 	
   </ul>
 </div>
@@ -1311,23 +1462,6 @@ Other:
   </ul>
 </div> 
 
-
-<div class="section">
-  <div class="section-title">LED BY</div>
-  <ul class="wargear">
-    <li>This unit can be led by the following units:</li>
-    
-	<ul>
-		
-		<li><a href="#section3-alpharius" class="section-link" data-sound="sounds/glitch.mp3">Alpharius</a></li>
-		<li><a href="#section3-exodus" class="section-link" data-sound="sounds/glitch.mp3">Exodus</a></li>
-		
-	</ul>
-	
-  </ul>
-</div>
-
-
   <div class="keywords"> 
     <b>KEYWORDS:</b> <span>GRENADE</span>, <span>INFANTRY</span>, Headhunter Prime:{ <span>GRENADE</span>, <span>INFANTRY</span>, <span>CHARACTER</span>}
   </div>
@@ -1338,9 +1472,14 @@ Other:
 
 Other Vehicle:
 
+
 </main>
+
 </div>
 
+
+
+<script src="leaders.js"></script>
 <script src="main.js"></script>
 <script src="wt-tags.js"></script>
 

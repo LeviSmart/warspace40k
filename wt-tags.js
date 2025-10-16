@@ -349,7 +349,7 @@ class WeaponTable extends HTMLElement {
     this.replaceWith(section);
 	
 	
-resound_wt_tag();
+resound_tag("wt-tag");
 
 	
 	

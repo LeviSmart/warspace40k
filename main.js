@@ -54,14 +54,18 @@ currentHoverAudio = null;
 });
 });
 
-function resound_wt_tag() { 
+function resound_tag(type) { 
 
-document.querySelectorAll('wt-tag').forEach(item => {
+document.querySelectorAll(type).forEach(item => {
 	
 	
 item.addEventListener('mouseenter', () => {
+	
+let soundPath = "sounds/glitch.mp3";
 
-const soundPath = 'sounds/glitch2.mp3';
+if(type == "a"){ soundPath = item.getAttribute('data-sound');}
+if(type == "wt-tag"){ soundPath = 'sounds/glitch2.mp3';}
+
 
 // Остановить предыдущий звук, если был
 if (currentHoverAudio) {
@@ -94,7 +98,7 @@ currentHoverAudio = null;
 
  };
 
-resound_wt_tag();
+resound_tag();
 
 
 
